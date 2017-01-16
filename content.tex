@@ -1,0 +1,28 @@
+%!TEX root = problems.tex
+
+%\printanswers
+
+\noindent
+The following problem comes from Douglas Hofstadter's book \emph{Gödel, Escher, Bach}~\cite{hofstadter79}.
+Take the time to try to solve this problem yourself.
+The problem concerns strings of characters.
+The only characters allowed/available are M, U and I.
+
+\subsubsection*{Question}
+You start with the string MI and the goal is to use the four rules below to convert it into the string MU.
+In the rules, the letter x denotes any string.
+You can use the rules any number of times and in any order, just so long as you get to MU~\cite{muwikipedia}.
+
+
+\begin{center}
+\begin{tabular}{rlll}
+
+ & Rule & Example & Explanation  \\
+\midrule
+1 &	xI to xIU & MI	to	MIU & Append U to the end of a string ending in I. \\
+2 &	Mx to Mxx & MIU	to	MIUIU & Double the string after the M. \\
+3 &	xIIIy to xUy & MUIIIU	to	MUUU & Replace any III with a U. \\
+4 &	xUUy to xy & MUUU	to	MU & Remove any UU. \\
+\bottomrule
+\end{tabular}
+\end{center}
